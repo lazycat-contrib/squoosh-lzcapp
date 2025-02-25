@@ -1,0 +1,35 @@
+lzc-sdk-version: "0.1"
+name: squoosh
+package: cloud.lazycat.app.squoosh
+version: 1.12.0
+description: Google浏览器团队开源的图片压缩工具
+homepage: https://github.com/GoogleChromeLabs/squoosh
+author: GoogleChromeLabs
+application:
+  subdomain: squoosh
+  background_task: true
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://squoosh.cloud.lazycat.app.squoosh.lzcapp:8080/
+  public_path:
+    - /
+  file_handler:
+    mime:
+      - image/jpeg
+      - image/jpg
+      - image/png
+      - image/webp
+      - image/avif
+      - image/svg+xml
+      - image/gif
+      - image/bmp
+      - image/tiff
+    actions:
+      open: /?file=%u
+
+services:
+  squoosh:
+    image: registry.lazycat.cloud/czyt/dko0/squoosh:df630b9bf89b8d8e
