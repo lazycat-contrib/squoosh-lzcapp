@@ -1,0 +1,15 @@
+name: Squoosh
+package: cloud.lazycat.app.squoosh
+version: 1.12.0
+min_os_version: 1.5.0
+description: "Image compression tool from the Google Chrome Labs team"
+homepage: https://github.com/GoogleChromeLabs/squoosh
+author: GoogleChromeLabs
+license: Apache-2.0
+locales:
+  en:
+    name: Squoosh
+    description: "Image compression tool from the Google Chrome Labs team"
+  zh:
+    name: Squoosh
+    description: "Google Chrome Labs 团队开源的图片压缩工具"
