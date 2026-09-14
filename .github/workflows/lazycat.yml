@@ -3,7 +3,7 @@ name: Update and publish LazyCat app
 on:
   schedule:
     # 23:20 Asia/Shanghai (UTC+8)
-    - cron: "20 15 * * *"
+    - cron: "20 13 * * *"
   workflow_dispatch:
 
 permissions:
